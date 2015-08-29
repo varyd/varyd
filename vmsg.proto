@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+import "datum.proto";
+
+option java_package = "com.nicerobot.vmsg";
+option objc_class_prefix = "VMSG";
+
+package vmsg;
+
+// Interface exported by the server.
+service VDBC {
+
+  //
+  rpc Subscribe(Action) returns (Action) {}
+
+  //
+  rpc Message(Action) returns (Action) {}
+
+}
+
+//
+message Action {
+  enum Act {
+    CREATE = 0;
+    UPDATE = 1;
+    INSERT = 2;
+    DELETE = 3;
+    SELECT = 4;
+    SKIP = 5;
+    TRAVERSE = 6;
+  }
+  Datum On = 2;
+}

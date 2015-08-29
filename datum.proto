@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+//
+message Datum {
+  string Address = 1;
+  map<string, string> Properties = 2;
+}

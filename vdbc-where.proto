@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "com.nicerobot.vdbc";
+option objc_class_prefix = "VDBC";
+
+package vdbc;
+
+service VDBC {
+
+}
