@@ -25,9 +25,11 @@ message Action {
     UPDATE = 1;
     INSERT = 2;
     DELETE = 3;
-    SELECT = 4;
-    SKIP = 5;
-    TRAVERSE = 6;
+    SET = 4;
+    GET = 5;
+    SKIP = 6;
+    TRAVERSE = 7;
+    INDEX = 8;
   }
   Datum On = 2;
 }

@@ -19,7 +19,7 @@ The paper describes the:
 1. programming langauge interface,
 1. system architecture,
 1. query processing strategy,
-1. and storage system VaryD.
+1. and storage system.
 
 ## Introduction
 
@@ -28,7 +28,7 @@ The paper describes the:
 
 Polyglot persistence without reinventing the wheel.
 
-All the best parts of PostgreSQL/PostGIS, ElasticSearch, OrientDB, BigTable, InfluxDB, ...
+All the best parts of PostgreSQL/PostGIS, Redis, ElasticSearch, OrientDB, BigTable, InfluxDB, ...
 
 ## Query Languages
 
@@ -74,7 +74,7 @@ e.g. Distances ...
 
 ## Programming Interfaces
 
-Are RPC protocols based on protocol buffers.
+RPC protocols based on protocol buffers.
 
 ### VDBC
 
@@ -86,8 +86,16 @@ The interfaces through which subscribed clients receive messages from VaryD.
 
 Any action can generate a message, from:
 
-- creation
-- deletion
+- create
+- delete
+- insert
+- update
+- set
+- get
+- skip
+- traverse
+- index
+- ...
 
 ## System Architectures
 
